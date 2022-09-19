@@ -37,4 +37,5 @@ addButton.addEventListener('click', () => {
   viewSection.append(newBook);
   titleValue = '';
   authorValue = '';
+  localStorage.setItem('userBook', JSON.stringify(bookLists);
 });
