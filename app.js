@@ -80,3 +80,9 @@ document.querySelector('.button').addEventListener('click', () => {
 
   Book.clearValues();
 });
+
+viewSection.addEventListener('click', (e) => {
+ Book.removeBook(e.target);
+
+ Book.removeBookFromLocalStorage(e.target.id);
+});
