@@ -82,7 +82,7 @@ document.querySelector('.button').addEventListener('click', () => {
 });
 
 viewSection.addEventListener('click', (e) => {
- Book.removeBook(e.target);
+  Book.removeBook(e.target);
 
- Book.removeBookFromLocalStorage(e.target.id);
+  Book.removeBookFromLocalStorage(e.target.id);
 });
