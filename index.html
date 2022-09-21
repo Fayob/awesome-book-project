@@ -8,11 +8,21 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body style="margin: 1rem">
-    <h1>All Awesome Books</h1>
+    <nav class="navbar">
+      <h1>Awesome Books</h1>
+      <ul class="nav_lists">
+        <li class="nav_list"><a href="#view_section" class="nav_list_a list active">List</a></li>
+        <li class="nav_list "><a href="#inputs" class="nav_list_a new">Add New</a></li>
+        <li class="nav_list last"><a href="#contacts" class="nav_list_a contact">Contact</a></li>
+      </ul>
+    </nav>
     <main>
-      <section id="view_section"></section>
-      <section id="inputs" style="margin-top: 1rem">
-        <h4>Add a new Book</h4>
+      <section class="book_lists">
+        <h2 style="margin-bottom: 2rem;">All Awesome Books</h2>
+        <div id="view_section"></div>
+      </section>
+      <form id="inputs" class="form hidden" style="margin-top: 1rem">
+        <h2>Add a new Book</h2>
         <input type="text" name="title" placeholder="Title" id="title" />
         <br />
         <br />
@@ -20,8 +30,20 @@
         <br />
         <br />
         <button type="submit" class="button">Add</button>
+      </form>
+      <section id="contacts" class="contact_info hidden">
+        <h1 style="margin-bottom: 1rem;">Contact Information </h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, natus?</p>
+        <ul class="contact_list">
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+          <li>Lorem ipsum dolor sit amet consectetur.</li>
+        </ul>
       </section>
     </main>
+    <footer>
+      <div class="copyright">Copyright...</div>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>

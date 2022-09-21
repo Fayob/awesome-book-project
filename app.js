@@ -1,4 +1,10 @@
 const viewSection = document.querySelector('#view_section');
+const bookList = document.querySelector('.book_lists');
+const form = document.querySelector('.form');
+const contact = document.querySelector('.contact_info');
+const listNav = document.querySelector('.list');
+const addNav = document.querySelector('.new');
+const contactNav = document.querySelector('.contact');
 
 class Book {
   constructor(title, author, id) {
@@ -85,4 +91,31 @@ viewSection.addEventListener('click', (e) => {
   Book.removeBook(e.target);
 
   Book.removeBookFromLocalStorage(e.target.id);
+});
+
+listNav.addEventListener('click', () => {
+  listNav.classList.add('active');
+  addNav.classList.remove('active');
+  contactNav.classList.remove('active');
+  bookList.classList.remove('hidden');
+  form.classList.add('hidden');
+  contact.classList.add('hidden');
+});
+
+addNav.addEventListener('click', () => {
+  addNav.classList.add('active');
+  listNav.classList.remove('active');
+  contactNav.classList.remove('active');
+  form.classList.remove('hidden');
+  bookList.classList.add('hidden');
+  contact.classList.add('hidden');
+});
+
+contactNav.addEventListener('click', () => {
+  contactNav.classList.add('active');
+  listNav.classList.remove('active');
+  addNav.classList.remove('active');
+  contact.classList.remove('hidden');
+  form.classList.add('hidden');
+  bookList.classList.add('hidden');
 });

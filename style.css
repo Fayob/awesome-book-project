@@ -7,21 +7,55 @@ body {
   text-align: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 0.4rem;
+  border: 2px solid black;
+  margin-bottom: 3rem;
+}
+
+.nav_list {
+  display: inline-block;
+  padding: 0 0.4rem;
+  border-right: 2px solid black;
+  list-style-type: none;
+  height: 100%;
+}
+
+.nav_list_a {
+  display: inline-block;
+  margin-top: 0.3rem;
+  text-decoration: none;
+  color: black;
+}
+
+.last {
+  border: none;
+}
+
+.active {
+  color: blue;
+}
+
 #view_section {
   border: 2px solid black;
-  max-width: 420px;
+  width: 80%;
   margin: 0 auto;
 }
 
 .new_book {
-  width: 100%;
-  margin: 0.2rem 0;
-  padding: 0 0.4rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-between;
 }
 
-#inputs {
+.new_book:nth-child(odd) {
+  background: lightgray;
+}
+
+.form {
   width: 200px;
   margin: 0 auto;
   display: flex;
@@ -52,4 +86,23 @@ body {
 
 .remove_button {
   margin-right: 0.5rem;
+}
+
+.contact_list {
+  width: 280px;
+  margin: 1rem auto;
+}
+
+.copyright {
+  position: fixed;
+  bottom: 0;
+  width: 95%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  text-align: start;
+  border: 1px solid black;
+}
+
+.hidden {
+  display: none;
 }
