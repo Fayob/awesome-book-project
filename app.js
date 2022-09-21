@@ -112,6 +112,7 @@ addNav.addEventListener('click', () => {
 });
 
 contactNav.addEventListener('click', () => {
+  contactNav.classList.add('active');
   listNav.classList.remove('active');
   addNav.classList.remove('active');
   contact.classList.remove('hidden');
