@@ -41,7 +41,7 @@ body {
 
 #view_section {
   border: 2px solid black;
-  width: 80%;
+  max-width: 60%;
   margin: 0 auto;
 }
 
