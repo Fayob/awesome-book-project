@@ -47,7 +47,7 @@ LinkedIn: [@abimbola-ade](https://www.linkedin.com/in/abimbola-ade)
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](#).
+Feel free to check the [issues page](https://github.com/Fayob/awesome-book-project/issues/4).
 
 ## Show your support
 
