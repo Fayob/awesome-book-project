@@ -39,6 +39,10 @@ Twitter: [@fabimworld2536](https://twitter.com/Fabimworld2536)
 
 LinkedIn: [@abimbola-ade](https://www.linkedin.com/in/abimbola-ade)
 
+## Live Demo
+
+[Checkout the live demo](https://fayob.github.io/awesome-book-project/)
+
 
 ## Contributing
 
