@@ -29,9 +29,9 @@ class Book {
     viewSection.append(newBook);
   }
 
-  static removeBook(bk) {
-    if (bk.classList.contains('remove_button')) {
-      bk.parentElement.remove();
+  static removeBook(book) {
+    if (book.classList.contains('remove_button')) {
+      book.parentElement.remove();
     }
   }
 
